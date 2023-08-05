@@ -25,17 +25,17 @@ $password = "Junior2023$";
 */
 
 
-$DB_HOST = $_ENV["DB_HOST"];
-$DB_NAME =  $_ENV["DB_NAME"];
-$DB_USER = $_ENV["DB_USER"];
-$DB_PASSWORD = $_ENV["DB_PASSWORD"];
+$servername = $_ENV["DB_HOST"];
+$database =  $_ENV["DB_NAME"];
+$username = $_ENV["DB_USER"];
+$password = $_ENV["DB_PASSWORD"];
 $DB_PORT = $_ENV["DB_PORT"];
 
 
 function conectar (){
 	//$conn = mysqli_connect($GLOBALS["servername"], $GLOBALS["username"], $GLOBALS["password"], $GLOBALS["database"]), $GLOBALS["port"]);	
-	//$conn = mysqli_connect($GLOBALS["servername"], $GLOBALS["username"], $GLOBALS["password"], $GLOBALS["database"]);	
-	$conn = mysqli_connect("$DB_HOST","$DB_USER","$DB_PASSWORD", "$DB_NAME");	
+	 $conn = mysqli_connect($GLOBALS["servername"], $GLOBALS["username"], $GLOBALS["password"], $GLOBALS["database"]);	
+	//$conn = mysqli_connect("$DB_HOST","$DB_USER","$DB_PASSWORD", "$DB_NAME");	
 	
 	if (!$conn) {
 	    die("Connection failed: " . mysqli_connect_error());
