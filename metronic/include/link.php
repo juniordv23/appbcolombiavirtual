@@ -18,18 +18,19 @@ $password = "junior";
 
 
 
-$servername = "154.49.247.52";
-$database = "u229440033_junior";
-$username = "u229440033_sayayin";
-$password = "Junior2023$";
-*/
-
-
 $servername = $_ENV["DB_HOST"];
 $database =  $_ENV["DB_NAME"];
 $username = $_ENV["DB_USER"];
 $password = $_ENV["DB_PASSWORD"];
 $DB_PORT = $_ENV["DB_PORT"];
+*/
+
+
+
+$servername = "containers-us-west-41.railway.app";
+$database = "railway";
+$username = "root";
+$password = "1mp1y4fs616OUFtKS5sK";
 
 
 function conectar (){
