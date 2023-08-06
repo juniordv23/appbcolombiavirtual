@@ -1,6 +1,6 @@
 <?php
 
-
+             // $clave = $_ENV['DDBB_PASSWORD'];
 $DB_HOST = $_ENV["DB_HOST"];
 $DB_NAME =  $_ENV["DB_NAME"];
 $DB_USER = $_ENV["DB_USER"];
